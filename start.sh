@@ -3,7 +3,7 @@ set -e
 
 # Unzip the discord bot archive
 echo "Unzipping discord-bot.zip..."
-unzip -o discord-bot.zip
+python -c "import zipfile; zipfile.ZipFile('discord-bot.zip').extractall('.')"
 
 # If the zip extracted into a subdirectory, move into it
 # (look for a directory that isn't a known top-level file)
