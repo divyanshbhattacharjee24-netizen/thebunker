@@ -13,7 +13,7 @@ async def on_ready():
     print(f"Logged in as {bot.user}")
 
 async def load_cogs():
-    for ext in ["cogs.moderation", "cogs.tickets", "cogs.giveaways", "cogs.echo"]:
+    for ext in ["moderation", "tickets", "giveaways", "echo"]:
         await bot.load_extension(ext)
 
 @bot.event
